@@ -1,0 +1,22 @@
+site_name: mkops
+theme:
+  name: material
+  palette:
+    scheme: default
+    primary: black
+    accent: red
+    language: es
+  icon:
+    repo: fontawesome/brands/github
+plugins:
+  - search
+
+copyright: Copyright &copy; 2020 Nelson Yaccuzzi
+extra:
+  social:
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/nelsonyaccuzzi
+      name: nelsonyaccuzzi on Twitter
+    - icon: fontawesome/brands/github
+      link: https://github.com/nelsonyaccuzzi
+      name: nelsonyaccuzzi on GitHub
