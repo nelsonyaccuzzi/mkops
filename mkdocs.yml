@@ -1,4 +1,4 @@
-site_name: mkops
+site_name: MkOps
 theme:
   name: material
   palette:
@@ -8,10 +8,12 @@ theme:
     language: es
   icon:
     repo: fontawesome/brands/github
+  features:
+    - navigation.tabs
+    - navigation.expand
 plugins:
   - search
-
-copyright: Copyright &copy; 2020 Nelson Yaccuzzi
+copyright: Copyright &copy; 2021 Nelson Yaccuzzi
 extra:
   social:
     - icon: fontawesome/brands/twitter
@@ -20,3 +22,4 @@ extra:
     - icon: fontawesome/brands/github
       link: https://github.com/nelsonyaccuzzi
       name: nelsonyaccuzzi on GitHub
+
