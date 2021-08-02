@@ -1,13 +1,12 @@
 language: python
 install:
-- pip list
 - pip install importlib-metadata --upgrade
-- pip list
 - pip install mkdocs-material==7.1.0
 script:
 - mkdocs build --verbose --clean --strict
 deploy:
  provider: pages
+ skip_cleanup: true
  repo: devops-frre/devops-frre.github.io
  target_branch: main
  github_token: $GITHUB_TOKEN
