@@ -2,10 +2,23 @@ site_name: MkOps
 theme:
   name: material
   palette:
-    scheme: default
-    primary: black
-    accent: red
-    language: es
+    # Light mode
+    - deep purple: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: light-blue
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+
+    # Dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: light-blue
+      accent: blue
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
   icon:
     repo: fontawesome/brands/github
   features:

@@ -4,7 +4,7 @@ hide:
   - toc        # Hide table of contents
 ---
 
-# Contenidos
+# Contenido
 
 ## Unidad Temática 1: Introducción a DevOps
 
