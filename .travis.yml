@@ -9,9 +9,8 @@ script:
 deploy:
  provider: pages
  repo: devops-frre/devops-frre.github.io
- target_branch: master
- skip_cleanup: true
- github_token: $GITHUB_TOKEN # Set in travis-ci.org dashboard
+ target_branch: main
+ github_token: $GITHUB_TOKEN
  local_dir: site
  on:
-   branch: master
+   branch: main
