@@ -1,4 +1,9 @@
+os: linux
 dist: focal
+addons:
+  apt:
+    packages:
+      - python3.7
 language: python
 install:
 - pip install importlib-metadata --upgrade
@@ -7,9 +12,10 @@ script:
 - mkdocs build --verbose --clean --strict
 deploy:
  provider: pages
+ strategy: git
  repo: devops-frre/devops-frre.github.io
  target_branch: main
- github_token: $GITHUB_TOKEN
+ token: $GITHUB_TOKEN
  local_dir: site
  on:
    branch: main
