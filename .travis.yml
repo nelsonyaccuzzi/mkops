@@ -8,7 +8,8 @@ install:
 script:
 - mkdocs build --verbose --clean --strict
 deploy:
- provider: pages
+ provider: pages.git
+ edge: true
  strategy: git
  repo: devops-frre/devops-frre.github.io
  target_branch: main
