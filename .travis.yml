@@ -1,7 +1,7 @@
 language: python
 install:
 - pip install importlib-metadata --upgrade
-- pip install mkdocs-material==7.1.0
+- pip install mkdocs-material==8.5.1
 script:
 - mkdocs build --verbose --clean --strict
 deploy:

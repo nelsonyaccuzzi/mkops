@@ -1,21 +1,22 @@
 site_name: MkOps
+
 theme:
   name: material
   palette:
     # Light mode
-    - deep purple: "(prefers-color-scheme: light)"
-      scheme: default
+    - scheme: default
       primary: light-blue
       accent: indigo
+      media: "(prefers-color-scheme: light)"
       toggle:
         icon: material/weather-night
         name: Switch to dark mode
 
     # Dark mode
-    - media: "(prefers-color-scheme: dark)"
-      scheme: slate
+    - scheme: slate
       primary: light-blue
       accent: blue
+      media: "(prefers-color-scheme: dark)"
       toggle:
         icon: material/weather-sunny
         name: Switch to light mode
@@ -24,15 +25,23 @@ theme:
   features:
     - navigation.tabs
     - navigation.expand
+
+nav:
+  - Bienvenido: index.md
+  - Contenido: contenido.md
+  - Práctica: 
+    - Virtualización: practica/virtualization.md
+    - Contenedores: practica/containers.md
+    - Orquestación: practica/orquestation.md
+    - CI/CD: practica/ci-cd.md
+    - Bases de Datos: practica/dbs.md
+
 plugins:
   - search
-copyright: Copyright &copy; 2021 Nelson Yaccuzzi
+copyright: Copyright &copy; 2022 Nelson Yaccuzzi
 extra:
   social:
-    - icon: fontawesome/brands/twitter
-      link: https://twitter.com/nelsonyaccuzzi
-      name: nelsonyaccuzzi on Twitter
     - icon: fontawesome/brands/github
-      link: https://github.com/nelsonyaccuzzi
+      link: https://github.com/nelsonyaccuzzi/mkops
       name: nelsonyaccuzzi on GitHub
 
