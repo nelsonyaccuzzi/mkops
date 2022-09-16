@@ -10,6 +10,7 @@ script:
 deploy:
  provider: pages
  strategy: git
+ skip_cleanup: true
  repo: devops-frre/devops-frre.github.io
  target_branch: main
  token: $GITHUB_TOKEN
