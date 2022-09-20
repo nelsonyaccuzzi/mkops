@@ -50,4 +50,3 @@ spec:
         - containerPort: 80
         volumeMounts:
           - mountPath: "/usr/share/nginx/html"
-            name: task-pv-storage
