@@ -60,21 +60,11 @@
 1. Copiar el kubeconfig a la pc e intentar hacer consultas con `kubectl`
 2. Realizar consultas a la API directamente con curl, usando tokens y certificados
 
+
 ## **Ejercicio 2**
 ---
 
-Realizar los siguientes tutoriales. Anotar todo lo que no se puede replicar en el entonro local y luego en conjunto lo revisamos.
-
-- [Pods](https://www.katacoda.com/contino/courses/kubernetes/pods)
-- [Deployments](https://www.katacoda.com/contino/courses/kubernetes/basic-deployments)
-- [Services](https://www.katacoda.com/contino/courses/kubernetes/services)
-- [ConfigMaps and Secrets](https://www.katacoda.com/javajon/courses/kubernetes-fundamentals/configmap-secret)
-- [Kubernetes](https://www.katacoda.com/lizrice/scenarios/kubernetes)
-
-## **Ejercicio 3**
----
-
-1. Clonarse el siguiente repositorio: https://github.com/nelsonyaccuzzi/web-go.git
+1. Clonarse el siguiente repositorio: [web-go](https://github.com/nelsonyaccuzzi/web-go.git)
 2. Analizar el codigo y el Dockerfile
 3. Construir la imagen y pushearla a un repo propio en dockerhub
 4. Testear la imagen localmente con docker
