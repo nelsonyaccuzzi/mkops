@@ -25,6 +25,14 @@ theme:
   features:
     - navigation.tabs
     - navigation.expand
+    - content.code.annotate
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
 
 nav:
   - Bienvenido: index.md
@@ -35,6 +43,9 @@ nav:
     - Orquestación: practica/orquestation.md
     - CI/CD: practica/ci-cd.md
     - Bases de Datos: practica/dbs.md
+  - Otros:
+    - K8s - containerd: otros/kubernetes-containerd.md
+    - K8s - CRI-O: otros/kubernetes-crio.md
 
 plugins:
   - search
