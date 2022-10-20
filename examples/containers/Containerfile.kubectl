@@ -1,0 +1,7 @@
+FROM alpine
+
+RUN apk add curl && curl -LO https://dl.k8s.io/release/v1.25.0/bin/linux/amd64/kubectl && chmod +x kubectl
+
+FROM alpine
+
+COPY --from=0 /kubectl /usr/local/bin
