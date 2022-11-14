@@ -4,7 +4,7 @@
 ---
 
 
-1. Descargar la siguiente maquina virtual
+1. Descargar la siguiente [maquina virtual](https://frreutn-my.sharepoint.com/:u:/g/personal/nelsonyaccuzzi_ca_frre_utn_edu_ar/EcZ-pAgQs-BFmcIDAbDp2cIBdkE0tYIFBp6DQyrp8m7O3g?e=2Hdd1n)
 2. Desplegar la maquina virtual en virtualbox
 3. Validar la instalación y el repo tuto creado 
 4. Intentar realizar un nuevo despliegue
@@ -16,17 +16,13 @@
 ## **Ejercicio 2**
 ---
 
-
-1. Crear un Pipeline (a partir de un Jenkinsfile) que compile el dockerfile del siguiente proyecto https://github.com/nelsonyaccuzzi/web-go-public
-2. Crear un container que tenga solo el binario de kubectl, pushearlo a dockerhub
-3. Agregar el container al pod template que anteriormente creamos
-4. Crear un pipeline que haga un `kubectl get pod` del cluster actual (es necesario pasar los parametros `-s` `--token` `--insecure-skip-tls-verify` con sus respectivos valores)
-5. Crear un pipeline que cuando se ejecute en la rama develop haga el build de una imagen de docker anterior, y cuando este en la rama master haga un `kubectl get pod` del cluster
-6. Crear un pipeline que cuando se ejecute en la rama develop haga el build de la imagen y lo pushee a dockerhub
-7. Crear un pipeline que aplique los manifiestos (con `kubectl`) creados para la aplicacion web-go vista anteriormente
-8. Crear un pipeline que en la rama develop construya la imagen y la publique y que en la rama master aplique el manifiesto
-9. Crear un pipeline que actualice la imagen del deployment con la nueva imagen construida (esto se logra utilizando el `BUILD_NUMBER` del job de jenkins).
-10. Crear un pipeline que en la rama develop contruya la imagen, la publique y luega tambien que despliegue el manifiesto en una namespace de desarrollo, y que en la rama master solo despliegue el manifiesto en el namespace de produccion (es posible que se necesite dos manifiestos)
+1. Crear un pipeline (a partir de un Jenkinsfile) que compile el dockerfile del siguiente [proyecto](https://github.com/nelsonyaccuzzi/web-go)
+2. Modificar el pipeline para que cuando se ejecute en la rama develop haga el build de una imagen anterior, y cuando este en la rama master haga un `kubectl get pod` del cluster
+3. Modificar el pipeline para que cuando se ejecute en la rama develop haga el build de la imagen y lo pushee a dockerhub
+4. Modificar el pipeline para que aplique los manifiestos (con `kubectl`) creados para la aplicacion web-go vista anteriormente
+5. Modificar el pipeline para que en la rama develop construya la imagen y la publique y que en la rama master aplique el manifiesto
+6. Modificar el pipeline para que actualice la imagen del deployment con la nueva imagen construida (esto se logra utilizando el `BUILD_NUMBER` del job de jenkins).
+7. Modificar el pipeline para que en la rama develop contruya la imagen, la publique y luega tambien que despliegue el manifiesto en una namespace de desarrollo, y que en la rama master solo despliegue el manifiesto en el namespace de produccion (es posible que se necesite dos manifiestos)
 
 ### Recursos
 
